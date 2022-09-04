@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập thêm js 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--boostrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--bài tập 1-->
+    <div class="card">
+        <div class="card " style="color:red ;">
+            TÍNH THUẾ THU NHẬP CÁ NHÂN
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Họ-tên</label>
+                <input type="text" class="form-control col-2" name="" id="ten" aria-describedby="helpId"
+                    placeholder="">
+                <label for="">Thu nhập hàng năm </label>
+                <input type="number" class="form-control col-2" name="" id="thunhap" aria-describedby="helpId"
+                    placeholder="">
+                <label for="">Số người phụ thuộc</label>
+                <input type="number" class="form-control col-1" name="" id="songuoiphuthuoc" aria-describedby="helpId"
+                    placeholder="">
+            </div>
+            <button class="btn btn-success" onclick="tienthue()">Tính thuế</button>
+        </div>
+        <div id="thue" style="display: none;" class="text-body"></div>
+    </div>
+    <br>
+       <!--bài tập 2-->
+    <div class="card">
+        <div class=" text-capitalize">
+            TÍNH TIỀN CÁP
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Mã số khách hàng</label>
+                <input type="number" class="form-control col-2" name="" id="maso" aria-describedby="helpId"
+                    placeholder="">
+                <div class="row" onchange="soKetnoi()">
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="nhadan"
+                                value="option1" checked>
+                            <label class="form-check-label" for="nhadan">
+                                Nhà dân
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="doanh_nghiep"
+                                value="option2">
+                            <label class="form-check-label" for="doanh_nghiep">
+                                Doanh nghiệp
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="">Số kênh cao cấp</label>
+                    <input type="number" class="form-control col-1" name="" id="so_kenh" aria-describedby="helpId"
+                        placeholder="">
+                </div>
+                <div id="box" style="display:none">
+                    <label for="">Số lượng kết nối</label>
+                    <input type="number" class="form-control col-1" name="" id="somuonketnoi" aria-describedby="helpId"
+                        placeholder="">
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="thanhToan()">Thanh toán</button>
+        </div>
+        <div id="thanhToan" style="display: none;" class=" bg-info "></div>
+    </div>
+    <!--boostrap-->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
